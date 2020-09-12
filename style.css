@@ -11,7 +11,11 @@
   scroll-behavior: smooth;
 }
 
-header {
+body {
+  margin: 0;
+}
+
+nav {
   background-color: #30323d;
   padding: 15px 20px 15px 25px;
   display: flex;
@@ -25,19 +29,25 @@ header {
   left: 0;
 }
 
-a {
-  text-decoration: none;
+.navMenu {
+  flex-basis: 70%;
+  max-width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navMenu span {
+  padding: 10px;
+  margin: 0 0 0 10px;
+  cursor: pointer;
+}
+
+.navMenu span:hover {
+  background-color: #484b5b;
 }
 
 .active {
   border-bottom: 2px solid #fff;
-}
-
-.navMenu {
-  flex-basis: 70%;
-  max-width: 35rem;
-  display: flex;
-  justify-content: space-between;
 }
 
 section {
