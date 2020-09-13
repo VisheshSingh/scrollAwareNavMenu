@@ -25,11 +25,12 @@ const callback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const navItem = navItems[entry.target.id];
+      console.log(navItem);
       navItem.classList.add('active');
 
       Object.values(navItems).forEach((item) => {
         if (item != navItem) {
-          navItem.classList.remove('active');
+          item.classList.remove('active');
         }
       });
     }
